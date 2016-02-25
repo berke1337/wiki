@@ -7,5 +7,5 @@ There is also an internal wiki with much of our competition material which we do
 - **Web**: http://cyberteam.berkeley.edu
 - **Twitter**: [@berke1337](https://twitter.com/berke1337)
 - **Mailing list**: berke1337@lists.berkeley.edu
-- **IRC**: `#berke1337` at [freenode](http://freenode.net)
+- **Gitter**: https://gitter.im/berke1337/chat
 - **github**: https://github.com/berke1337
