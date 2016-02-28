@@ -40,6 +40,25 @@ You can test NAT rules using `> test nat-policy-match`.
 
 **TODO** figure out difference between *applications* and *services*.
 
+### Loading partial configuration
+
+Loading a partial configuration is very finicky. If you do it wrong, e.g. by using an incorrect load command syntax, you might be logged out from your terminal without warning.
+
+```
+scp import configuration source-ip <IP> from <user>@<host>:<file>
+load config partial from <file> mode <mode> from-xpath <path> to-xpath /config/<path>
+```
+
+Those paths do not match the paths you will see in configuration mode, instead refer to the following table:
+
+Xpath                        | Configuration mode items under this path 
+-----------------------------|-----------------------------------------
+...                          | mgt-config, shared
+devices/entry/...            | deviceconfig, network
+devices/entry/vsys/entry/... | application, application-group, import, rulebase, schedule, service, service-group, zone
+
+There are 3 modes: *replace*, *merge* and *append*. *merge* and *append* are both pretty much ill-defined and should basically only be used when there is a list of multiple named entries that you want to append to.
+
 ## Guides and documentation
 
 *Designing Networks with Palo Alto Networks Firewalls*: https://live.paloaltonetworks.com/twzvq79624/attachments/twzvq79624/IntegrationArticles/29/1/PaloAltoNetworks-Designs-Guide-RevB.pdf
