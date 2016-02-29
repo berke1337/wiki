@@ -40,6 +40,8 @@ You can test NAT rules using `> test nat-policy-match`.
 
 **TODO** figure out difference between *applications* and *services*.
 
+By default, intra-zone traffic is allowed and inter-zone traffic is denied. You can change this under `rulebase default-security-rules`.
+
 ### Loading partial configuration
 
 Loading a partial configuration is very finicky. If you do it wrong, e.g. by using an incorrect load command syntax, you might be logged out from your terminal without warning.
