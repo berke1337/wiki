@@ -14,6 +14,9 @@ Localhost -> remotehost
 `scp localfile.txt your_username@remotehost.edu:/remote/dir`
 
 ### Vim
+=======
+A more extensive list to print out is at http://tnerual.eriogerg.free.fr/vimqrc.pdf!
+
 | Key                    | Action                                  |
 |------------------------|-----------------------------------------|
 | x                      | delete char                             |
