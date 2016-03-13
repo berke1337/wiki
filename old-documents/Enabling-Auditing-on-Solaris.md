@@ -1,3 +1,5 @@
+# Solaris Auditing
+
 On older Solaris boxes, you may need to run
 `/etc/security/bsmconv/`.
 

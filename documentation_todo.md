@@ -17,7 +17,6 @@
 * guides/incident-response.md
 * cheat-sheets/centos-cheat-sheet.md
 
-
-
 ### Other todos
-* add default configuration file for each service as a reference to detect malicious stuff.
+* add default configuration file for each service as a reference to detect
+  malicious stuff.

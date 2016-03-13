@@ -1,10 +1,14 @@
-# Intro
+# JunOS
 
-**JunOS** is the operating system that runs on ''Juniper Networks'' equipment. It is a FreeBSD derivative.
+## Intro
+
+**JunOS** is the operating system that runs on ''Juniper Networks'' equipment.
+It is a FreeBSD derivative.
 
 ## Command-line interface
 
-If you login as `root`, you get a `csh`. The JunOS configuration shell is `/usr/sbin/cli`. All the documentation you will find online uses this shell.
+If you login as `root`, you get a `csh`. The JunOS configuration shell is
+`/usr/sbin/cli`. All the documentation you will find online uses this shell.
 
 ### Basic operations
 
@@ -14,17 +18,23 @@ Normally, you'll get a prompt like this:
 ```
 root@VJX0>
 ```
-You can view the configuration with `show configuration`. As you will see, the configuration is hierarchical, and curly braces are used to separate levels.
+You can view the configuration with `show configuration`. As you will see, the
+configuration is hierarchical, and curly braces are used to separate levels.
 
 You can go into configuration mode:
 ```
-root@VJX0> edit 
+root@VJX0> edit
 Entering configuration mode
 
 [edit]
-root@VJX0# 
+root@VJX0#
 ```
-Once in configuration mode, use `set` to configure things, or use `delete` to unconfigure things. There is good tab-completion, or you can also type `?` to get a list of options. You can use `edit` again to limit your scope (e.g. `edit system services`), and you can then use `up` to broaden your scope again (also `up [number]`). Use `show` to show the current configuration in the current scope.
+Once in configuration mode, use `set` to configure things, or use `delete` to
+unconfigure things. There is good tab-completion, or you can also type `?` to
+get a list of options. You can use `edit` again to limit your scope (e.g.
+  `edit system services`), and you can then use `up` to broaden your scope again
+  (also `up [number]`). Use `show` to show the current configuration in the
+  current scope.
 
 Once you're done editing you can do any of the following:
 ```
@@ -35,11 +45,16 @@ commit            save changes and apply to live configuration
 rollback          undo all uncommitted changes
 ```
 
-# Transparent firewalling
+## Transparent firewalling
 
-Following is a template configuration for transparent firewalling on SRX or J devices. Note that the built-in DHCP server does not work in transparent mode! You need to reboot if you change the router from route to transparent mode or vice-versa.
+Following is a template configuration for transparent firewalling on SRX or J
+devices. Note that the built-in DHCP server does not work in transparent mode!
+You need to reboot if you change the router from route to transparent mode or
+vice-versa.
 
-This configuration just shows a simple in-line transparent firewall. You could do more advanced things such as use the integrated bridging/switching for Bastion-like setups.
+This configuration just shows a simple in-line transparent firewall. You could
+do more advanced things such as use the integrated bridging/switching for
+Bastion-like setups.
 
 ```
 system {
@@ -114,7 +129,8 @@ bridge-domains {
 }
 ```
 
-Below are some example security policies you could use. Capirca also supports JunOS.
+Below are some example security policies you could use. Capirca also supports
+JunOS.
 
 ```
 # Example policies
@@ -170,9 +186,10 @@ security {
 }
 ```
 
-# Switching
+## Switching
 
-All ports on separate VLANs with a trunk port, management IP is native on trunk port. On SRX:
+All ports on separate VLANs with a trunk port, management IP is native on trunk
+port. On SRX:
 
 ```
 system {
@@ -255,11 +272,11 @@ vlans {
 }
 ```
 
-# Routing
+## Routing
 
 TODO
 
-# Layer 3 port mirroring
+## Layer 3 port mirroring
 
 Step 1: Configure port mirroring in the forwarding options hierarchy:
 
@@ -317,7 +334,7 @@ Step 3: Apply the filter on an interface that is to be mirrored
 
 From https://kb.juniper.net/KB21833
 
-# References
+## References
 
 For J- and SRX-Series:
 
