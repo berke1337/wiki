@@ -1,3 +1,5 @@
+# Juniper Transparent Firewall
+
 ```
 {secondary:node0}[edit]
 root@SRX3400-1# edit interfaces ge-0/0/1 unit 0 family bridge
@@ -59,6 +61,7 @@ root@SRX3400-1# set interfaces ge-0/0/1.0
 {primary:node0}[edit security zones security-zone trust]
 root@SRX3400-1# set host-inbound-traffic system-services ping ssh
 ```
+
 ### Example Firewall Config (ours will be different)
 ```
 root@SRX3400-1# set security address-book address 172.31.20.0/24 172.31.20.0/24

@@ -1,14 +1,17 @@
 # Where to start: Bro
+
 (1) For an academic introduction, read the original Bro paper:
 * http://www.icir.org/vern/papers/bro-CN99.pdf
 
-The core system architecture hasn't changed much over the years, so if you want to know how the system works internally, this paper has the details.
+The core system architecture hasn't changed much over the years, so if you want
+to know how the system works internally, this paper has the details.
 
 (2) Go through workshop from 2011 and do all the exercises:
 * https://www.bro.org/bro-workshop-2011/
 Solutions exist as well.
 
-(3) Try to solve the Cyber Challenge from April 2013: the official instructions have been removed, so here's the scoop. First, download this PCAP trace:
+(3) Try to solve the Cyber Challenge from April 2013: the official instructions
+have been removed, so here's the scoop. First, download this PCAP trace:
 * http://www.icir.org/matthias/tmp/cq-2013-04.pcap
 
 Then run Bro on it and figure out what happened in the trace.

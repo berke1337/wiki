@@ -1,4 +1,10 @@
-**Note**: I've been warned by another networking guy to ensure that ports have their mode explicitly marked as "access", and that DTP (dynamic trunk protocol) and VTP (vlan trunking protocol) are disabled. These features, if not set, could allow attackers to hop vlans. The commands to disable these protocols are ```vtp mode transparent``` and ```switchport nonegotiate```.
+# Cisco VLAN Config
+
+**Note**: I've been warned by another networking guy to ensure that ports have
+their mode explicitly marked as "access", and that DTP (dynamic trunk protocol)
+and VTP (vlan trunking protocol) are disabled. These features, if not set, could
+allow attackers to hop vlans. The commands to disable these protocols are
+`vtp mode transparent` and `switchport nonegotiate`.
 
 ### Factory Reset
 ```
