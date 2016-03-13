@@ -13,6 +13,9 @@ Remote Host -> Local host:
 Localhost -> remotehost
 `scp localfile.txt your_username@remotehost.edu:/remote/dir`
 
+### Navigating in bash
+http://ss64.com/bash/syntax-keyboard.html
+
 ### Vim
 =======
 A more extensive list to print out is at http://tnerual.eriogerg.free.fr/vimqrc.pdf!
