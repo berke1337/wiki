@@ -1,10 +1,10 @@
 # How to start learning about security
 
 ## Basics
-There are some fundamental basics you have to know to get started.
-* Know what a virtual machine (VM) is. Install your favorite operating system inside a VM. If you haven't had any exposure to Linux yet, the latest Ubuntu LTS is a good start.
+* Setup a virtual machine with your favorite operating system. If you haven’t used Linux yet, the latest Ubuntu LTS is a good start: http://www.ubuntu.com/download/desktop
 * Feel comfortable in a linux or windows shell
-* ...
+* Having one VM running Kali Linux (https://www.kali.org/) can be useful because it comes with a lot of useful tools, but is not necessary.
+* This youtube channel has a great introduction to “hacking” and also has some very nice video “write-ups” of past CTFs so you can get a feel of what to expect: https://www.youtube.com/playlist?list=PLhixgUqwRTjxglIswKp9mpkfPNfHkzyeN
 * have a look at our Hacksheet: https://github.com/berke1337/hacksheet
 
 ## Getting started
