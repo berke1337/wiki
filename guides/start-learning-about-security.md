@@ -1,4 +1,27 @@
 # How to start learning about security
+We frequently get questions about how to get started in the field
+of cybersecurity. One of our goals is to help teach the field in
+our workshops and through competitions, but if you're looking for
+some extra material, here are some good resources:
+
+- Web Security
+   - [The Tangled Web](http://www.amazon.com/Tangled-Web-Securing-Modern-Applications-ebook/dp/B006FZ3UNI) by Michal Zalewski
+   - [The OWASP Top Ten](https://www.owasp.org/index.php/Category:OWASP_Top_Ten_Project)
+- Exploitation
+   - [Hacking: The Art of Exploitation](http://www.amazon.com/Hacking-The-Art-Exploitation-Edition/dp/1593271441) by Jon Erickson
+   - [SkullSecurity](https://blog.skullsecurity.org/)
+- Malware
+   - [Contagio](http://contagiodump.blogspot.com/)
+   - [Offensive Computing](http://www.offensivecomputing.net/)
+- Cybercrime
+   - [Krebs on Security](http://krebsonsecurity.com/)
+
+Above all, the best way to learn security is by doing it. Read
+some of the above materials, find an attack or defense you'd like
+to try, set up a test environment (don't attack anyone else's
+stuff), and have at it!
+
+# How to get started in BERKE1337
 
 ## Basics
 * Setup a virtual machine with your favorite operating system. If you haven’t used Linux yet, the latest Ubuntu LTS is a good start: http://www.ubuntu.com/download/desktop
